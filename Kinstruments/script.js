@@ -290,6 +290,7 @@ let percussion = [
 
 window.onload = function(){
 
+    addItems();
     document.querySelector("#home").onclick = addItems;
     document.querySelector("#strings").onclick = addItemsString;
     document.querySelector("#woodwind").onclick = addItemsWoodwind;

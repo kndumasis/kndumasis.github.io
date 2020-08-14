@@ -67,7 +67,6 @@ footer{
     background-color: #eaceb4;
     row-gap: 3em;
     column-gap: 3em;
-    background-color: #eaceb4;
 }
 
 .item{
@@ -83,3 +82,43 @@ p{
     font-family: 'Karla';
     color: #bb5a5a;
 }
+
+form{
+    display:grid;  
+    margin:auto;  
+    width:500px;  
+    grid-template-columns: 1fr; 
+    grid-gap: 5px;
+}
+
+#contactForm{
+    background-color: #eaceb4;
+    color: #bb5a5a;
+    font-family: 'Karla';
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#contactSubmit {
+    background-color: #bb5a5a;
+    color: #eaceb4;
+    padding: 14px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+#contactSubmit:hover {
+    background-color: brown
+  }
+
+  input[type=text],[type=email], textarea, #city{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+  }

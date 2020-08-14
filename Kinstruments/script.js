@@ -433,3 +433,11 @@ function addItemsPercussion()
     }
     
 }
+
+function validateForm() {
+    var x = document.forms["formContact"]["name"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }

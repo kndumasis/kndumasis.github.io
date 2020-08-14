@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4246de8042.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" id="Kinstruments"><h1>Kinstruments</h1></a>
+      <p id="pHeader">Instruments for Sale</p>
+    </header>
+
+    <ul>
+      <li id="home"><a href="index.html">Home</a></li>
+      <li id="strings"><a href="index.html">String</a></li>
+      <li id="woodwind"><a href="index.html">Woodwind</a></li>
+      <li id="brass"><a href="index.html">Brass</a></li>
+      <li id="percussion"><a href="index.html">Percussion</a></li>
+      <li id="contact"><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div id="contactForm">
+        <form name="formContact" action="https://httpbin.org/post​" onsubmit="return validateForm()" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="Name" required>
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" placeholder="Email" required>
+            <label for="address">Address: </label>
+            <input type="text" name="address" placeholder="Address">
+            <label for="city">City: </label>
+            <input list="cities" name="city" placeholder="City" id="city" required>
+            <datalist id="cities">
+                <option value="Toronto"></option>
+                <option value="Brampton"></option>
+                <option value="Mississauga"></option>
+                <option value="Richmond Hill"></option>
+                <option value="Hamilton"></option>
+                <option value="Vaughan"></option>
+                <option value="Kitchener"></option>
+                <option value="Windsor"></option>
+            </datalist>
+
+            <label for="postalCode">Postal Code: </label>
+            <input type="text" name="postalCode" placeholder="Postal Code"
+            pattern="[A-Za-z][0-9][A-Za-z]\s?[0-9][A-Za-z][0-9]" title="postalCode" required>
+
+            <div id="radioButtons">
+                <input type="radio" name="question" value="Question">
+                <label for="question">Question</label>
+                <input type="radio" name="comment" value="Comment">
+                <label for="comment">Comment</label>
+                <input type="radio" name="orderProblem" value="Order Problem">
+                <label for="orderProblem">Order Problem</label>
+            </div>
+
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="7" cols="100" placeholder="Enter message here"></textarea>
+
+            <input type="hidden" id="myName" name="myName" value="Kristoffer Noel Dumasis">
+
+            <input id="contactSubmit" type="submit" value="Submit">
+        </form>
+
+
+    </div>
+
+
+<footer>
+
+  Follow Us On<br><br>
+  <a href="wwww.facebook.com/kinstruments"><i class="fab fa-facebook-square"></i></a>
+  <a href="www.instagram.com/kinstruments"><i class="fab fa-instagram-square"></i></a>
+  <a href="www.twitter.com/kinstruments"><i class="fab fa-twitter-square"></i></a>
+  <br><br>
+  
+  <div class="subscription">
+    <form
+  action="https://formspree.io/xaypkvlo"
+  method="POST"
+>
+  <label>
+    <input type="email" name="email" placeholder="Enter your email">
+  </label>
+
+
+  <!-- your other form fields go here -->
+
+  <button type="submit"></button>
+</form>
+  </div>
+
+  <br>
+  &copy; 2020 Kinstruments 
+
+
+</footer>
+
+  </body>
+</html>

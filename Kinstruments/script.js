@@ -70,7 +70,7 @@ let strings = [
         "Category" : "String",
         "Price": 1.00
     }
-];
+]
 
 let woodwind = [
     {
@@ -142,7 +142,7 @@ let woodwind = [
         "Category" : "Woodwind",
         "Price": 1.00
     }
-];
+]
 
 let brass = [
     {
@@ -214,7 +214,7 @@ let brass = [
         "Category" : "Brass",
         "Price": 1.00
     }
-];
+]
 
 let percussion = [
     {
@@ -286,7 +286,7 @@ let percussion = [
         "Category" : "Brass",
         "Price": 1.00
     }
-];
+]
 
 window.onload = function(){
 

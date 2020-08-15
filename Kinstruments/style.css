@@ -113,7 +113,7 @@ form{
     background-color: brown
   }
 
-  input[type=text],[type=email], textarea, #city{
+  input[type=text],[type=email],[type=submit], textarea, #city{
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -121,4 +121,12 @@ form{
     border-radius: 4px;
     box-sizing: border-box;
     resize: none;
+  }
+  
+  #footerSubmit{
+      width: 25%;
+  }
+
+  #orderNumber{
+      display: none;
   }

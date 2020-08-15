@@ -435,9 +435,53 @@ function addItemsPercussion()
 }
 
 function validateForm() {
-    var x = document.forms["formContact"]["name"].value;
-    if (x == "") {
+    var name = document.forms["formContact"]["name"].value;
+    if (name == "") {
       alert("Name must be filled out");
       return false;
     }
+    var email = document.forms["formContact"]["email"].value;
+    if (email == "") {
+      alert("Email must be filled out");
+      return false;
+    }
+    var address = document.forms["formContact"]["address"].value;
+    if (address == "") {
+      alert("Address must be filled out");
+      return false;
+    }
+    var postalCode = document.forms["formContact"]["postalCode"].value;
+    if (postalCode == "") {
+      alert("postalCode must be filled out");
+      return false;
+    }
   }
+
+  // check and uncheck radio buttons
+  var state = function(){
+    $("input[type='radio']").click(function() {
+      var previousValue = $(this).attr('previousValue');
+      var name = $(this).attr('name');
+  
+      if (previousValue == 'checked') {
+        $(this).removeAttr('checked');
+        $(this).attr('previousValue', false);
+      } else {
+        $("input[name="+name+"]:radio").attr('previousValue', false);
+        $(this).attr('previousValue', 'checked');
+      }
+    });
+  };
+  
+  state('option');
+
+
+function checkRadio(){
+
+    if(document.getElementById("orderProblem").checked == true) {
+        document.getElementById("orderNumber").style.display = "inline";
+    }else if(document.getElementById('orderProblem').checked == false) {
+        document.getElementById("orderNumber").style.display = "none";
+    }
+}
+    

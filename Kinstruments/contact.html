@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/4246de8042.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
   </head>
@@ -51,16 +52,19 @@
             pattern="[A-Za-z][0-9][A-Za-z]\s?[0-9][A-Za-z][0-9]" title="postalCode" required>
 
             <div id="radioButtons">
-                <input type="radio" name="question" value="Question">
+                <input type="radio" id ="question "name="option" value="Question" onclick="checkRadio()">
                 <label for="question">Question</label>
-                <input type="radio" name="comment" value="Comment">
+                <input type="radio" id="comment" name="option" value="Comment" onclick="checkRadio()">
                 <label for="comment">Comment</label>
-                <input type="radio" name="orderProblem" value="Order Problem">
+                <input type="radio" id="orderProblem" name="option" value="Order Problem" onclick="checkRadio()">
                 <label for="orderProblem">Order Problem</label>
             </div>
 
+            <label for="orderNumber"></label>
+            <input type="text" id="orderNumber" name="orderNumber" placeholder="Order Number">
+
             <label for="message">Message: </label>
-            <textarea id="message" name="message" rows="7" cols="100" placeholder="Enter message here"></textarea>
+            <textarea id="message" name="message" rows="7" cols="100" placeholder="Enter message here" required></textarea>
 
             <input type="hidden" id="myName" name="myName" value="Kristoffer Noel Dumasis">
 
@@ -79,19 +83,12 @@
   <a href="www.twitter.com/kinstruments"><i class="fab fa-twitter-square"></i></a>
   <br><br>
   
-  <div class="subscription">
-    <form
-  action="https://formspree.io/xaypkvlo"
-  method="POST"
->
+  <div>
+    <form action="https://formspree.io/xaypkvlo" method="POST">
   <label>
     <input type="email" name="email" placeholder="Enter your email">
+    <input id="footerSubmit" type="submit" value="Subscribe">
   </label>
-
-
-  <!-- your other form fields go here -->
-
-  <button type="submit"></button>
 </form>
   </div>
 
